@@ -58,8 +58,11 @@ const questions = [
 // generating the readme file
 function generateReadme(replies) {
     return `
+
+# ${replies.title}
+
 ## Description
-${replies.title}
+${replies.description}
 
 ## Table of Contents
 - [Installation](#installation)
@@ -69,13 +72,13 @@ ${replies.title}
 - [Tests](#tests)
 - [Questions](#questions)
 
-## Installkation
+## Installation
 ${replies.installation}
 
 ## Usage
 ${replies.usage}
 
-## license
+## License
 This project is using the ${replies.license} License.
 
 ## Contributing
@@ -85,6 +88,7 @@ ${replies.contributing}
 ${replies.tests}
 
 ##Questions
+
 GitHub: [${replies.github}](https://github.com/${replies.github})
 
 For additional questions, you can reach me at ${replies.email}.
@@ -94,9 +98,9 @@ For additional questions, you can reach me at ${replies.email}.
 inquirer.prompt(questions).then((replies) => {
   const readmeContent = generateReadme(replies);
 
-  //writing to the generatedReadME.md file and put in a seperate generated folder
-  fs.writeFileSync('./generated/generatedReadME.md', readmeContent);
-  console.log('Check inside the generated folder for the generatedReadME.md you have just created');
+  //writing to the generatedREADME.md file and put in a seperate generated folder
+  fs.writeFileSync('./generated/generatedREADME.md', readmeContent);
+  console.log('Check inside the generated folder for the generatedREADME.md you have just created');
 }) .catch((error) => {
     console.error('An ERROR has taken place', error);
   })
