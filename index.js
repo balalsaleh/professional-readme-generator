@@ -85,8 +85,9 @@ ${replies.contributing}
 ${replies.tests}
 
 ##Questions
-This is my git hub ${replies.github}
-For additional questions, you can email me at: ${replies.email}.
+GitHub: [${replies.github}](https://github.com/${replies.github})
+
+For additional questions, you can reach me at ${replies.email}.
 `;
 }
 
@@ -96,4 +97,6 @@ inquirer.prompt(questions).then((replies) => {
   //writing to the generatedReadME.md file and put in a seperate generated folder
   fs.writeFileSync('./generated/generatedReadME.md', readmeContent);
   console.log('Check inside the generated folder for the generatedReadME.md you have just created');
-});
+}) .catch((error) => {
+    console.error('An ERROR has taken place', error);
+  })
