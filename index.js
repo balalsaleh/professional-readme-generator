@@ -85,7 +85,7 @@ For additional questions, you can email me at: ${replies.email}.
 inquirer.prompt(questions).then((replies) => {
   const readmeContent = generateReadme(replies);
 
-  //writingto the README.md file
-  fs.writeFileSync('generatedReadME.md', readmeContent);
-  console.log('generatedReadME.md created');
+  //writing to the generatedReadME.md file and put in a seperate generated folder
+  fs.writeFileSync('./generated/generatedReadME.md', readmeContent);
+  console.log('Check inside the generated folder for the generatedReadME.md you have just created');
 });
