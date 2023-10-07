@@ -61,6 +61,14 @@ function generateReadme(replies) {
 ## Description
 ${replies.title}
 
+## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
+
 ## Installkation
 ${replies.installation}
 
