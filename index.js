@@ -58,16 +58,27 @@ const questions = [
 // generating the readme file
 function generateReadme(replies) {
     return `
-# ${replies.title}
-# ${replies.description}
-# ${replies.installation}
-# ${replies.usage}
-# ${replies.license}
-# ${replies.contributing}
-# ${replies.tests}
-# ${replies.github}
-# ${replies.email}
-# ${replies.questions}
+## Description
+${replies.title}
+
+## Installkation
+${replies.installation}
+
+## Usage
+${replies.usage}
+
+## license
+This project is using the ${replies.license} License.
+
+## Contributing
+${replies.contributing}
+
+## Tests
+${replies.tests}
+
+##Questions
+This is my git hub ${replies.github}
+For additional questions, you can email me at: ${replies.email}.
 `;
 }
 
