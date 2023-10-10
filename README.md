@@ -26,4 +26,6 @@ Please refer to the video tutorial using the following link:
 
 ## Links
 
-- link for repositry:
+- [Link for repository](https://github.com/balalsaleh/professional-readme-generator)
+
+- [Loom video tutorial](https://www.loom.com/share/c712473186ae4f938bc2fffb18d9ff4e)
