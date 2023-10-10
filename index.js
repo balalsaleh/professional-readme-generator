@@ -53,7 +53,7 @@ const questions = [
         name: 'github',
         message: 'Enter your GitHub username:',
     },
-    // Prompt for the user's email address
+    // Prompt for the user's email address to contact you for questions
     {
         type: 'input',
         name: 'email',
@@ -128,7 +128,7 @@ ${replies.tests}
 
 ## Questions
 
-GitHub: [${replies.github}](https://github.com/${replies.github})
+My GitHub: [${replies.github}](https://github.com/${replies.github})
 
 For additional questions, you can reach me at ${replies.email}.
 `;
