@@ -24,9 +24,10 @@ const questions = [
         message: 'Enter usage information:',
     },
     {
-        type: 'input',
+        type: 'list',
         name: 'license',
         message: 'Choose a license for your project:',
+        choices: ['MIT', 'Apache', 'GPL', 'None'],
     },
     {
         type: 'input',
@@ -58,6 +59,8 @@ const questions = [
 // generating the readme file
 function generateReadme(replies) {
     return `
+
+# README
 
 # ${replies.title}
 
